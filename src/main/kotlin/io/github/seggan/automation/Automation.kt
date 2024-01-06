@@ -32,18 +32,18 @@ class Automation : AbstractAddon() {
         runOnNextTick {
             log(
                 """
-                ################# Automation $pluginVersion #################
+                ################# 自动化 Automation $pluginVersion #################
                 
-                Automation is open-source, you can contribute or report issues here:
+                Automation 是开源的，你可以作出贡献或在此汇报问题：
                 $bugTrackerURL
-                Join the Slimefun Addon Community Discord: discord.gg/SqD3gg5SAU
+                加入 Slimefun 附属社区 Discord：discord.gg/SqD3gg5SAU
                 
                 ###################################################
                 """.trimIndent()
             )
         }
 
-        val mainCommand = getCommand("automation") ?: error("Failed to get command")
+        val mainCommand = getCommand("automation") ?: error("无法获取指令")
         mainCommand.setExecutor(SuperCommand.MAIN)
         mainCommand.tabCompleter = SuperCommand.MAIN
 
@@ -83,7 +83,7 @@ class Automation : AbstractAddon() {
     fun key(key: String) = NamespacedKey(this, key)
 
     override fun getJavaPlugin(): JavaPlugin = this
-    override fun getBugTrackerURL(): String = "https://github.com/Seggan/Automation/issues"
+    override fun getBugTrackerURL(): String = "https://github.com/SlimefunGuguProject/Automation/issues"
 }
 
 private var instance: Automation? = null

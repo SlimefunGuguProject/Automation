@@ -13,7 +13,7 @@ object Groups {
         pluginInstance.key("automation"),
         CustomItemStack(
             SlimefunUtils.getCustomHead(Heads.PC),
-            "&fAutomation"
+            "&f自动化"
         )
     )
 
@@ -22,7 +22,7 @@ object Groups {
         MAIN,
         CustomItemStack(
             Material.REDSTONE,
-            "&bAutomation Components"
+            "&b自动化组件"
         )
     )
 
@@ -31,7 +31,7 @@ object Groups {
         MAIN,
         CustomItemStack(
             Material.IRON_BLOCK,
-            "&bAutomation Machines"
+            "&b自动化机器"
         )
     )
 }

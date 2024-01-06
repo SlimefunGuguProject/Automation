@@ -227,23 +227,23 @@ class Computer(
 
     companion object {
         private val INV_BORDER = intArrayOf(5, 14, 23, 32, 41, 50)
-        private val INV_ITEM = CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&fInventory")
+        private val INV_ITEM = CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE, "&f物品栏")
         private val COMPONENT_BORDER = intArrayOf(18, 19, 20, 21, 22)
-        private val COMPONENT_ITEM = CustomItemStack(Material.BLUE_STAINED_GLASS_PANE, "&fComponents")
+        private val COMPONENT_ITEM = CustomItemStack(Material.BLUE_STAINED_GLASS_PANE, "&f组件")
         private val COMPONENT_SLOTS = intArrayOf(27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 45, 46, 47, 48, 49)
         private val BG = intArrayOf(0, 2, 4, 9, 10, 11, 12, 13)
         private const val STATUS = 1
         private const val SWITCH = 3
-        private val ON = CustomItemStack(Material.STRUCTURE_VOID, "&aClick to turn off")
-        private val OFF = CustomItemStack(Material.BARRIER, "&cClick to turn on")
+        private val ON = CustomItemStack(Material.STRUCTURE_VOID, "&a点击关闭")
+        private val OFF = CustomItemStack(Material.BARRIER, "&c点击启动")
 
-        private val STATUS_NO_CPU = CustomItemStack(Material.RED_STAINED_GLASS, "&cNo CPU")
-        private val STATUS_NO_RAM = CustomItemStack(Material.RED_STAINED_GLASS, "&cNo RAM")
-        private val STATUS_NO_DISK = CustomItemStack(Material.RED_STAINED_GLASS, "&cNo Disk")
-        private val STATUS_NO_POWER = CustomItemStack(Material.RED_STAINED_GLASS, "&cNo Power")
-        private val STATUS_ERROR = CustomItemStack(Material.RED_STAINED_GLASS, "&cError")
+        private val STATUS_NO_CPU = CustomItemStack(Material.RED_STAINED_GLASS, "&c没有 CPU")
+        private val STATUS_NO_RAM = CustomItemStack(Material.RED_STAINED_GLASS, "&c没有 内存条")
+        private val STATUS_NO_DISK = CustomItemStack(Material.RED_STAINED_GLASS, "&c没有 磁盘")
+        private val STATUS_NO_POWER = CustomItemStack(Material.RED_STAINED_GLASS, "&c没有 电力")
+        private val STATUS_ERROR = CustomItemStack(Material.RED_STAINED_GLASS, "&c错误")
         private val STATUS_OK = CustomItemStack(Material.GREEN_STAINED_GLASS, "&aOK")
-        private val STATUS_OFF = CustomItemStack(Material.GRAY_STAINED_GLASS, "&7Off")
+        private val STATUS_OFF = CustomItemStack(Material.GRAY_STAINED_GLASS, "&7关闭")
 
         val syncJobs: MutableMap<BlockPosition, Mutex<MutableList<(Block) -> Unit>>> = ConcurrentHashMap()
     }

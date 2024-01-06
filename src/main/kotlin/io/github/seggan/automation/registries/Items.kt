@@ -19,105 +19,105 @@ object Items {
 
     //<editor-fold desc="CPUs" defaultstate="collapsed">
     val IRON_CPU = buildSlimefunItem {
-        name = "&fIron CPU"
+        name = "&f铁 CPU"
         id = "IRON_CPU"
         material = MaterialType.Head(Heads.IRON_CPU)
-        +"&7A CPU made out of iron."
-        +"&7It's not very fast, but it's cheap."
+        +"&7由铁制成的 CPU。"
+        +"&7时钟速度并不是很快，但是便宜。"
         +""
-        +"&eClock Speed: 2 Hz"
+        +"&e主频：2 Hz"
     }
 
     val GOLD_CPU = buildSlimefunItem {
-        name = "&6Gold CPU"
+        name = "&6金 CPU"
         id = "GOLD_CPU"
         material = MaterialType.Head(Heads.GOLD_CPU)
-        +"&7A CPU made out of gold."
-        +"&7It's faster than iron, but still not very fast."
+        +"&7由金制成的 CPU。"
+        +"&7时钟速度比铁制的快，但是还不够快。"
         +""
-        +"&eClock Speed: 16 Hz"
+        +"&e主频：16 Hz"
     }
 
     val REDSTONE_CPU = buildSlimefunItem {
-        name = "&4Redstone CPU"
+        name = "&4红石 CPU"
         id = "REDSTONE_CPU"
         material = MaterialType.Head(Heads.REDSTONE_CPU)
-        +"&7A CPU made out of redstone."
-        +"&7A decent CPU for a decent price."
+        +"&7由红石制成的 CPU。"
+        +"&7一款物美价廉的 CPU。"
         +""
-        +"&eClock Speed: 64 Hz"
+        +"&e主频：64 Hz"
     }
 
     val DIAMOND_CPU = buildSlimefunItem {
-        name = "&bDiamond CPU"
+        name = "&b钻石 CPU"
         id = "DIAMOND_CPU"
         material = MaterialType.Head(Heads.DIAMOND_CPU)
-        +"&7A CPU made out of diamonds."
-        +"&7A very fast CPU, but it's expensive."
+        +"&7由钻石制成的处理器。"
+        +"&7时钟速度很快，但是非常昂贵。"
         +""
-        +"&eClock Speed: 256 Hz"
+        +"&e主频：256 Hz"
     }
 
     val REINFORCED_CPU = buildSlimefunItem {
-        name = "&7Reinforced CPU"
+        name = "&7强化合金 CPU"
         id = "REINFORCED_CPU"
         material = MaterialType.Head(Heads.REINFORCED_CPU)
-        +"&7A CPU made out of reinforced alloy."
-        +"&7Blazing fast, but also very expensive."
+        +"&7由强化合金制成的 CPU。"
+        +"&7时钟速度极快，但也非常昂贵。"
         +""
-        +"&eClock Speed: 1024 Hz"
+        +"&e主频：1024 Hz"
     }
 
     val NPU = buildSlimefunItem {
-        name = "&1Nano Processing Unit"
+        name = "&1纳米 CPU"
         id = "NPU"
         material = MaterialType.Head(Heads.NPU)
-        +"&7A CPU utilizing nanotechnology."
-        +"&7Very complex and very expensive. Possibly overkill."
+        +"&7运用了纳米科技的 CPU。"
+        +"&7非常复杂且昂贵。也许会性能过剩。"
         +""
-        +"&eClock Speed: As fast as possible"
+        +"&e主频：不止于快"
     }
     //</editor-fold>
 
     //<editor-fold desc="Peripherals" defaultstate="collapsed">
     val SENSOR_1 = buildSlimefunItem {
-        name = "&fSensor I"
+        name = "&f传感器 I"
         id = "SENSOR_1"
         material = MaterialType.Material(Material.BEACON)
-        +"&7A sensor that can get information about nearby"
-        +"&7blocks and entities."
+        +"&7一台可获取周围"
+        +"&7方块与实体信息的传感器。"
         +""
-        +"&eRange: 4 blocks"
+        +"&e范围：4 格"
     }
 
     val SENSOR_2 = buildSlimefunItem {
-        name = "&fSensor II"
+        name = "&f传感器 II"
         id = "SENSOR_2"
         material = MaterialType.Material(Material.BEACON)
-        +"&7A sensor that can get information about nearby"
-        +"&7blocks and entities."
+        +"&7一台可获取周围"
+        +"&7方块与实体信息的传感器。"
         +""
-        +"&eRange: 16 blocks"
+        +"&e范围：16 格"
     }
 
     val SENSOR_3 = buildSlimefunItem {
-        name = "&fSensor III"
+        name = "&f传感器 III"
         id = "SENSOR_3"
         material = MaterialType.Material(Material.BEACON)
-        +"&7A sensor that can get information about nearby"
-        +"&7blocks and entities."
+        +"&7一台可获取周围"
+        +"&7方块与实体信息的传感器。"
         +""
-        +"&eRange: 64 blocks"
+        +"&e范围：64 格"
     }
     //</editor-fold>
 
     val DISK: SlimefunItemStack = Disk(512, UUID(0, 0))
 
     val COMPUTER = buildSlimefunItem {
-        name = "&fComputer"
+        name = "&f计算机"
         id = "COMPUTER"
         material = MaterialType.Head(Heads.PC)
-        +"&7A computer that can run programs."
+        +"&7一台可以运行程序的计算机。"
     }
 
     fun register(addon: SlimefunAddon) {

@@ -10,10 +10,10 @@ class Disk(
 ) : SlimefunItemStack(
     "AUTOMATION_FLOPPY_DISK",
     Material.MUSIC_DISC_5,
-    "&fFloppy Disk",
+    "&f软盘",
     "",
-    "&7A floppy disk that can store data.",
+    "&7一张可存储数据的软盘。",
     "",
-    "&eSize: $size bytes",
+    "&e容量：$size 字节",
     "&eID: $uuid",
 )

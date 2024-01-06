@@ -17,7 +17,7 @@ object CreateCommand : TabExecutor {
         if (args.size != 1) return false
 
         if (!sender.isOp) {
-            sender.sendMessage("You must be an operator to use this command.")
+            sender.sendMessage("你必须拥有 OP 权限。")
             return true
         }
 
@@ -42,7 +42,7 @@ object SfDosCommand : TabExecutor {
         val diskItem = sender.inventory.itemInMainHand
         val disk = DiskManager.getDisk(diskItem)
         if (disk == null) {
-            sender.sendMessage("You must be holding a disk to use this command.")
+            sender.sendMessage("你必须手持磁盘才能使用该指令")
             return true
         }
 
@@ -50,7 +50,7 @@ object SfDosCommand : TabExecutor {
             javaClass.getResourceAsStream("/init.metis")!!.use { it.copyTo(out) }
         }
 
-        sender.sendMessage("Disk initialized with the latest version of SF-DOS.")
+        sender.sendMessage("该磁盘已格式化并安装了最新版本的 SF-DOS。")
 
         return true
     }
